@@ -51,6 +51,34 @@ console.log(dogYears(28));
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
 
+function dogFood(dogAge, dogWeight) {
+  if (dogAge >= 1 && dogWeight <= 5) {
+    return dogWeight * 0.05 + " pounds of food per day";
+  } else if (dogAge >= 1 && (dogWeight >= 6, dogWeight <= 10)) {
+    return dogWeight * 0.04 + " pounds of food per day";
+  } else if (dogAge >= 1 && (dogWeight >= 11, dogWeight <= 15)) {
+    return dogWeight * 0.03 + " pounds of food per day";
+  } else if (dogAge >= 1 && dogWeight > 15) {
+    return dogWeight * 0.02 + " pounds of food per day";
+  } //puppies: 2-4 mo = 0.16-0.34
+  // 4-7 mo = 0.34-0.59
+  // 7-12 mo = 0.59-0.99
+  //using max weight of 50lbs for the puppies.
+  else if (dogAge < 0.16 && dogWeight < 5) {
+    return "this doggo should still be on breast milk";
+  } else if ((dogAge >= 0.16, dogAge < 0.34) && dogWeight < 50) {
+    return dogWeight * 0.1 + " pounds of food per day";
+  } else if ((dogAge >= 0.34, dogAge < 0.59) && dogWeight < 50) {
+    return dogWeight * 0.05 + " pounds of food per day";
+  } else if ((dogAge >= 0.59, dogAge < 1) && dogWeight < 50) {
+    return dogWeight * 0.04 + " pounds of food per day";
+  }
+}
+//task:
+console.log(dogFood(1, 15));
+//puppy example:
+console.log(dogFood(0.5, 2));
+
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
 // Your function should take a string (either rock paper or sissors)
