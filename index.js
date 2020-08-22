@@ -151,6 +151,21 @@ console.log(feetToCm(4));
 //60s should be D
 //and anything below 60 should be F
 
+function grade(percent) {
+  if (percent >= 90) {
+    console.log("A");
+  } else if (percent >= 80 && percent < 90) {
+    console.log("B");
+  } else if (percent >= 70 && percent < 80) {
+    console.log("C");
+  } else if (percent >= 60 && percent < 70) {
+    console.log("D");
+  } else if (percent >= 0 && percent < 60) {
+    console.log("F");
+  }
+}
+console.log(grade(76));
+
 /************************************************************** Stretch **************************************************************/
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
 // Hint - you may need to study tomorrow's traning kit on arrays
