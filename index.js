@@ -1,26 +1,32 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-
+var votingAge = 18;
+console.log(votingAge > 18);
 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
 
-
+var num1 = 2;
+var num2 = 3;
+num1 = num1+num2;
+console.log(num1)
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
-
-
+var string = "1999";
+var number = parseInt(string);
+console.log(number);
 
 
 //Task d: Write a function to multiply a*b 
 
-
-
+funtion (a=3,b=4){
+    return a*b;
+};
 
 
 /************************************************************** Task 2 **************************************************************/
