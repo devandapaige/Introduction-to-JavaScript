@@ -86,6 +86,41 @@ console.log(dogFood(0.5, 2));
 // use math.random to determine the computers choice
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number
 
+const rock = 0;
+const paper = 1;
+const scissors = 2;
+
+function rpsGame(humanChoice) {
+  const compChoice = Math.floor(Math.random() * 3);
+  //Rock choices:
+  if (humanChoice === "rock" && compChoice === rock) {
+    console.log("It's a tie! ROCK vs ROCK");
+  } else if (humanChoice === "rock" && compChoice === paper) {
+    console.log("You loose 😢. ROCK vs PAPER");
+  } else if (humanChoice === "rock" && compChoice === scissors) {
+    console.log("You win 🙌! ROCK vs SCISSORS");
+  }
+  //Paper choices:
+  else if (humanChoice === "paper" && compChoice === rock) {
+    console.log("You win 🙌! PAPER vs ROCK");
+  } else if (humanChoice === "paper" && compChoice === paper) {
+    console.log("It's a tie! PAPER vs PAPER");
+  } else if (humanChoice === "paper" && compChoice === scissors) {
+    console.log("You loose 😢. PAPER vs SCISSORS");
+  }
+  //Scissors choices:
+  else if (humanChoice === "scissors" && compChoice === rock) {
+    console.log("You loose 😢. SCISSORS vs ROCK");
+  } else if (humanChoice === "scissors" && compChoice === paper) {
+    console.log("You win 🙌! SCISSORS vs PAPER");
+  } else if (humanChoice === "scissors" && compChoice === scissors) {
+    console.log("It's a tie! SCISSORS vs SCISSORS");
+  }
+}
+console.log(rpsGame("paper"));
+console.log(rpsGame("rock"));
+console.log(rpsGame("scissors"));
+
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
