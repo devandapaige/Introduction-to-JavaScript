@@ -125,7 +125,17 @@ console.log(rpsGame("scissors"));
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
+function kmToMi(km) {
+  return km * 0.621371 + " miles";
+}
+console.log(kmToMi(10));
+
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
+
+function feetToCm(feet) {
+  return feet * 30.48 + "cm";
+}
+console.log(feetToCm(4));
 
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
