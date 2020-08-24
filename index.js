@@ -98,31 +98,53 @@ function rpsGame() {
   //Rock choices:
   if (humanChoice === "rock" && compChoice === rock) {
     let h1 = document.querySelector("h1");
-    h1.innerHTML = "It's a TIE";
+    h1.innerHTML = "It's a TIE!";
     let p = document.querySelector("p");
     p.innerHTML = "ROCK vs ROCK - Play again below.";
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
   } else if (humanChoice === "rock" && compChoice === paper) {
-    console.log("You loose 😢. ROCK vs PAPER");
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = "You loose 😢";
+    let p = document.querySelector("p");
+    p.innerHTML = "ROCK vs PAPER - Play again below.";
   } else if (humanChoice === "rock" && compChoice === scissors) {
-    console.log("You win 🙌! ROCK vs SCISSORS");
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = "You win 🙌!";
+    let p = document.querySelector("p");
+    p.innerHTML = "ROCK vs SCISSORS - Play again below.";
   }
   //Paper choices:
   else if (humanChoice === "paper" && compChoice === rock) {
-    console.log("You win 🙌! PAPER vs ROCK");
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = "You win 🙌!";
+    let p = document.querySelector("p");
+    p.innerHTML = "PAPER vs ROCK - Play again below.";
   } else if (humanChoice === "paper" && compChoice === paper) {
-    console.log("It's a tie! PAPER vs PAPER");
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = "It's a TIE!";
+    let p = document.querySelector("p");
+    p.innerHTML = "PAPER vs PAPER - Play again below.";
   } else if (humanChoice === "paper" && compChoice === scissors) {
-    console.log("You loose 😢. PAPER vs SCISSORS");
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = "You loose 😢";
+    let p = document.querySelector("p");
+    p.innerHTML = "PAPER vs SCISSORS - Play again below.";
   }
   //Scissors choices:
   else if (humanChoice === "scissors" && compChoice === rock) {
-    console.log("You loose 😢. SCISSORS vs ROCK");
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = "You loose 😢";
+    let p = document.querySelector("p");
+    p.innerHTML = "SCISSORS vs ROCK - Play again below.";
   } else if (humanChoice === "scissors" && compChoice === paper) {
-    console.log("You win 🙌! SCISSORS vs PAPER");
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = "You win 🙌!";
+    let p = document.querySelector("p");
+    p.innerHTML = "SCISSORS vs PAPER - Play again below.";
   } else if (humanChoice === "scissors" && compChoice === scissors) {
-    console.log("It's a tie! SCISSORS vs SCISSORS");
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = "It's a TIE!";
+    let p = document.querySelector("p");
+    p.innerHTML = "SCISSORS vs SCISSORS - Play again below.";
   }
 }
 let rpsButton = document.querySelector(".rpsButton");
@@ -161,7 +183,7 @@ function annoyingSong(counter) {
     );
   }
 }
-console.log(annoyingSong(20));
+console.log(annoyingSong(5));
 
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
