@@ -90,11 +90,19 @@ const rock = 0;
 const paper = 1;
 const scissors = 2;
 
-function rpsGame(humanChoice) {
+function rpsGame() {
+  let humanChoice = prompt("Rock, Paper, or Scissors?");
+  humanChoice = humanChoice.toLocaleLowerCase();
+  humanChoice = humanChoice.trim();
   const compChoice = Math.floor(Math.random() * 3);
   //Rock choices:
   if (humanChoice === "rock" && compChoice === rock) {
-    console.log("It's a tie! ROCK vs ROCK");
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = "It's a TIE";
+    let p = document.querySelector("p");
+    p.innerHTML = "ROCK vs ROCK - Play again below.";
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   } else if (humanChoice === "rock" && compChoice === paper) {
     console.log("You loose 😢. ROCK vs PAPER");
   } else if (humanChoice === "rock" && compChoice === scissors) {
@@ -117,9 +125,8 @@ function rpsGame(humanChoice) {
     console.log("It's a tie! SCISSORS vs SCISSORS");
   }
 }
-console.log(rpsGame("paper"));
-console.log(rpsGame("rock"));
-console.log(rpsGame("scissors"));
+let rpsButton = document.querySelector(".rpsButton");
+rpsButton.addEventListener("click", rpsGame);
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
@@ -188,3 +195,4 @@ console.log(grade(76));
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
+//***********ABOVE IN RPSGAME
