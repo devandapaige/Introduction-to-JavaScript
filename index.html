@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      body {
+        text-align: center;
+      }
+      p {
+        font-size: medium;
+      }
+      button {
+        border: none;
+        padding: 12px;
+        background-color: gray;
+        color: white;
+        font-weight: 700;
+        border-radius: 12px;
+      }
+      button:hover {
+        border: green solid 2px;
+        background-color: white;
+        color: black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Play Rock, Paper, Scissors</h1>
+    <p>
+      Click the button below, play your hand, and see if you win against the
+      computer!
+    </p>
+    <button class="rpsButton">Click to Play</button>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
